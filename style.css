@@ -1,0 +1,94 @@
+*{
+    box-sizing:border-box;
+    font-family:monospace;
+    color: beige;
+}
+body{
+    background: linear-gradient(0.5turn, #1da50b, #c4c10b,#b11a1a);
+}
+.page-div{
+    display:flex;
+    flex-wrap: wrap;
+}
+.bar{
+    list-style-type: none;
+    background-color: antiquewhite;
+    padding:20px;
+    display:flex;
+    margin:0;
+
+}
+.bar>li>a{
+    padding:10px;
+    text-decoration: none;
+    color:black;
+}
+.bar>li>a:hover{
+    background-color: azure;
+}
+header>h1{
+    background-color: rgb(60, 62, 99);
+    text-align:center;
+    margin:0;
+    padding:20px;
+
+}
+img{
+    width:100%;
+    max-width:100%;
+    height: auto;
+}
+figure{
+    margin:0;
+}
+main{
+    background-color: rgb(94, 37, 37);
+    padding: 12px;
+    width: 66.666667%;
+}
+aside {
+    background-color: rgb(94, 37, 37);
+    padding: 12px;
+    width: 33.333333%;
+  }
+video{
+      width:100%;
+  }
+footer{
+    background-color: #131124;
+    width:100%;
+    text-align: center;
+    padding:20px;
+    font-weight: bold;
+}
+@media (max-width: 399px) {
+    body{
+        background: linear-gradient(0.5turn, black,  antiquewhite, #131124);
+    }
+    .bar{
+        display:block;
+    }
+    header>h1{
+        background-color: black;
+    }
+    .bar>li{
+        padding: 10px;
+        font-size:20px;
+    }
+    aside{
+        display:none;
+    }
+    main{
+        width:100%;
+    }
+  }
+  @media (max-width: 799px) and (min-width:400px) {
+    body{
+        background: linear-gradient(0.5turn, rgb(60, 62, 99), rgb(94, 37, 37), #131124);
+    }
+  }
+  @media (min-width:800px) {
+    body{
+        margin: 0 5%;
+    }
+  }
